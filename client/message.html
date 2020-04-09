@@ -2,30 +2,36 @@
 <template name="message">
     {{#if me}}
         <li class="message right clearfix">
-            <span class="chat-img pull-right">
+            <!--<span class="chat-img pull-right">-->
+            <span class="chat-img float-right"><!--1.10-->
               <img src="{{gravatar}}" alt="User Avatar" class="img-circle" />
             </span>
             <div class="chat-body clearfix">
                 <div class="header">
                     <small class="text-muted">
-                        <span class="glyphicon glyphicon-time"></span> {{ago timestamp}}
+                        <!--<span class="glyphicon glyphicon-time"></span> {{ago timestamp}}-->
+                        <i class="far fa-clock"></i> {{ago timestamp}}
                     </small>
 
-                    <strong class="pull-right primary-font">{{usr}}</strong>
+                    <!--<strong class="pull-right primary-font">{{usr}}</strong>-->
+                    <strong class="float-right primary-font">{{usr}}</strong><!--1.10-->
                 </div>
                 <p>{{msg}} {{#if isClient}} - Sending...{{/if}}</p>
             </div>
         </li>
     {{else}}
         <li class="message left clearfix">
-            <span class="chat-img pull-left">
+            <!--<span class="chat-img pull-left">-->
+            <span class="chat-img float-left"><!--1.10-->
                 <img src="{{gravatar}}" alt="User Avatar" class="img-circle" />
             </span>
             <div class="chat-body clearfix">
                 <div class="header">
                     <strong class="primary-font">{{usr}}</strong>
-                    <small class="pull-right text-muted">
-                        <span class="glyphicon glyphicon-time"></span> {{ago timestamp}}
+                    <!--<small class="pull-right text-muted">-->
+                    <small class="float-right text-muted">
+                        <!--<span class="glyphicon glyphicon-time"></span> {{ago timestamp}}-->
+                        <span class="float-right primary-font"></span> {{ago timestamp}}
                     </small>
                 </div>
                 <p>{{msg}}</p>
@@ -33,5 +39,3 @@
         </li>
     {{/if}}
 </template>
-
-

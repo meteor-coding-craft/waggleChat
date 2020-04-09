@@ -6,6 +6,7 @@ import '../lib/methods.js';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/js/all.min.js';
 
 import './main.html';
 import './account.js';
@@ -29,3 +30,7 @@ import "./message.html";
 import "./message.js";
 
 //-->
+
+
+//meteor npm install -save @fortawesome/fontawesome-free
+//meteor npm install -save bootstrap

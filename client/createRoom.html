@@ -1,9 +1,13 @@
 
 <template name="createRoom">
+
     <div class="input-group">
-        <input type="text" name="roomId" class="form-control input-sm" placeholder="Type your room name here..." />
-        <span class="input-group-btn">
+        <!--<input type="text" name="roomId" class="form-control input-sm" placeholder="Type your room name here..." />-->
+        <input type="text" name="roomId" class="form-control form-control-sm" placeholder="Type your room name here..." /> <!--1.10-->
+        <!--<span class="input-group-btn">-->
+        <span class="input-group-append"><!--1.10-->
             <button class="btn btn-info btn-sm" name="saveRoom"> 채팅방 만들기</button>
         </span>
     </div>
+
 </template>
